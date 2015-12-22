@@ -1,4 +1,4 @@
-// necssary imports for thee program
+// necessary imports for the program
 import java.util.*;
 
 // Clause class
