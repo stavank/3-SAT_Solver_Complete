@@ -6,7 +6,7 @@ About this program :
 
 This program uses the DPLL algorithm to solve for satisfiability of a Boolean Formula in the Conjunctive Normal Form, often referred to as the CNF.
 
-A boolean formula is said to be in a conjunctive normal form if it has one or more clauses logically in an AND relation to one another. And each clause is a collection of literals (Any logical variable which can have two possible states/values i.e. True(ON) or False(OFF)) in a OR relation to one another.
+A boolean formula is said to be in a conjunctive normal form if it has one or more clauses logically in an AND relation to one another. And each clause is a collection of 3 literals (Any logical variable which can have two possible states/values i.e. True(ON) or False(OFF)) in a OR relation to one another.
 
 A boolean formula is said to be satisfiable if for some valid assignment of literals, the formula has an outcome of True.
 
