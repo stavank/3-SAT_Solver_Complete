@@ -39,7 +39,7 @@ import edu.rit.pj2.Tuple;
 import edu.rit.pj2.Vbl;
 
 
-// DPLL class extends Task
+// DPLLParallel class extends Task
 // Class with the main method for execution 
 public class DPLLParallel extends Task{
 	
