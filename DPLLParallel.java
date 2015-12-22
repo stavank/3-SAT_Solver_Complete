@@ -166,7 +166,7 @@ public class DPLLParallel extends Task{
 
   
   
-    // Parses clauses on in Data File and puts them in the formula
+	// Parses clauses on in Data File and puts them in the formula
 	// Throws exceptions if the file can't be read
 	public void parseClauses(List<Clause> F, String FileName){
 		try{
@@ -334,8 +334,8 @@ public class DPLLParallel extends Task{
 
   	// method to perform pure literal assignment
   	public static void PureLiteralAssign(Formula thrFormulaPureLit, int i){
-    	int pos = 0;
-    	int neg = 0;    
+    		int pos = 0;
+    		int neg = 0;    
 		int n = 0;
 		ListIterator<Clause> it = thrFormulaPureLit.F.listIterator();
 	      	while (it.hasNext()){
@@ -350,18 +350,18 @@ public class DPLLParallel extends Task{
 	       		}
 	   	}      
 	   	// if literal found in positive polarity
-     	if (n!=0 && pos!=0 &&pos == n){
- 		thrFormulaPureLit.assignment[i-1] = 1; 
-	       	Clause new1 = new Clause();
-    	   	new1.addLiteral(i);
-        	thrFormulaPureLit.F.add(new1);        
+     		if (n!=0 && pos!=0 &&pos == n){
+	 		thrFormulaPureLit.assignment[i-1] = 1; 
+		       	Clause new1 = new Clause();
+	    	   	new1.addLiteral(i);
+	        	thrFormulaPureLit.F.add(new1);        
 		}
 	   	// if literal found in negative polarity
 		else if (n!=0 && neg!=0 && neg == n){
 			thrFormulaPureLit.assignment[i-1] = 0;        
-    	  	Clause new1 = new Clause();
-       		new1.addLiteral(-i);
-        	thrFormulaPureLit.F.add(new1);
-        }
-    }
+	    	  	Clause new1 = new Clause();
+	       		new1.addLiteral(-i);
+	        	thrFormulaPureLit.F.add(new1);
+	        }
+	}
 }
