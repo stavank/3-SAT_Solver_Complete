@@ -31,6 +31,10 @@ B - True (Makes clause 1 and 2 True)<br>
 D - True (Makes clause 3 True) <br>
 All other literals can be unassigned or set to false and the formula will still be True.
 
+The DPLL algorithm here tries to perform a tree based search for all possible values of literals, but the search space is reduced (pruned) in advance with the help of steps : 
+(1) unit propagation - identify clauses with only one unassigned literal and assign a value to make the clause TRUE 
+(2) pure literal elimination - identifying literals with the same polarity across the formula and assigning values so as to make all those clauses TRUE
+
 Also, I have used the Parallel Java 2 Library Developed by Prof. Alan Kaminsky at RIT, to make this a parallel application, a solution that works on a multicore architecture.
 
 
