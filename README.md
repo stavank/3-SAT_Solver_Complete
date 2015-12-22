@@ -2,7 +2,10 @@
 
 This is a complete 3-SAT solver written in Java and Parallel Java 2 using the DPLL algorithm.
 
-About this program :
+Implementation Details :<br>
+DPLLParallel is the main class and Clause is a helper class.<br>
+
+About this problem :
 
 This program uses the DPLL algorithm to solve for satisfiability of a Boolean Formula in the Conjunctive Normal Form, often referred to as the CNF.
 
@@ -30,8 +33,6 @@ All other literals can be unassigned or set to false and the formula will still 
 
 Also, I have used the Parallel Java 2 Library Developed by Prof. Alan Kaminsky at RIT, to make this a parallel application, a solution that works on a multicore architecture.
 
-Implementation Details :<br>
-DPLLParallel is the main class and Clause is a helper class.<br>
 
 Applications of Boolean Satisfiability in Real world :<br>
 1) Automatic Test-Pattern Generation<br>
